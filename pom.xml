@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.company.project</groupId>
+    <groupId>com.tenpo.challenge</groupId>
     <artifactId>dynamic-percentage-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>dynamic-percentage-api</name>
@@ -11,7 +11,7 @@
     <properties>
         <java.version>21</java.version>
         <spring.boot.version>3.3.4</spring.boot.version>
-        <start-class>com.company.project.DynamicPercentageApiApplication</start-class>
+        <start-class>com.tenpo.challenge.DynamicPercentageApiApplication</start-class>
     </properties>
 
     <dependencyManagement>
