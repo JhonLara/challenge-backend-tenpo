@@ -1,10 +1,9 @@
 package com.tenpo.challenge.service;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
-
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
@@ -20,6 +19,5 @@ public class CalculationService {
         return new Result(result, percentage.doubleValue());
     }
 
-    public record Result(BigDecimal value, double percentageApplied) {
-    }
+    public record Result(BigDecimal value, double percentageApplied) {}
 }

@@ -1,4 +1,5 @@
 package com.tenpo.challenge.service;
+import java.util.Objects;
 
 import com.tenpo.challenge.client.PercentageClient;
 import com.tenpo.challenge.common.Constants;
@@ -7,8 +8,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
 import org.springframework.stereotype.Service;
-
-import java.util.Objects;
 
 @Service
 @RequiredArgsConstructor

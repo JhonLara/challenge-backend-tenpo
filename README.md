@@ -17,7 +17,10 @@ API Spring Boot para cálculo con porcentaje dinámico, caché con TTL 30 minuto
 - **GET `/history?page=0&size=20`**
   - Devuelve página de historial con: fecha, endpoint, parámetros, respuesta y error.
 
-- **Swagger UI**: `http://localhost:8080/swagger-ui.html`
+## Documentación (Swagger / OpenAPI)
+- **Swagger UI**: `http://localhost:18080/swagger-ui.html` (o `8080` si mapeas ese puerto)
+- Metadatos configurados en `src/main/java/com/company/project/config/OpenApiConfig.java`.
+- Anotaciones en controladores (`@Tag`, `@Operation`, `@ApiResponse`, `@Parameter`) para enriquecer la documentación.
 
 ## Requisitos
 
@@ -44,10 +47,13 @@ mvn spring-boot:run
 ## Ejecutar con Docker Compose (API + PostgreSQL)
 
 ```bash
-docker compose up --build
+docker-compose up --build
 ```
 
-La API quedará disponible en `http://localhost:8080` y la BD en `localhost:5432`.
+La API quedará disponible en `http://localhost:18080` y la BD en `localhost:5432`.
+
+## Solo Maven (sin Gradle)
+Este proyecto usa únicamente Maven. Si ves archivos de Gradle (build.gradle, gradlew, gradle/), son legados. Puedes eliminarlos del repo si lo deseas.
 
 ## Estrategia técnica
 
@@ -62,6 +68,15 @@ La API quedará disponible en `http://localhost:8080` y la BD en `localhost:5432
 
 - JUnit 5 + Mockito.
 - Pruebas unitarias para `CalculationService` y `PercentageService` incluyendo fallos del servicio externo y uso de caché.
+
+## Cobertura (JaCoCo)
+
+- Generar reportes de cobertura:
+  ```bash
+  mvn clean verify
+  ```
+- Reporte HTML: `target/site/jacoco/index.html`
+- Reporte XML: `target/site/jacoco/jacoco.xml` (para integraciones CI/Sonar)
 
 ## Publicar imagen (opcional)
 

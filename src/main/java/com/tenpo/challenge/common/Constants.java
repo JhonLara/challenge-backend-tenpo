@@ -1,8 +1,7 @@
 package com.tenpo.challenge.common;
 
 public final class Constants {
-    private Constants() {
-    }
+    private Constants() {}
 
     // Cache
     public static final String CACHE_PERCENTAGE = "percentageCache";
