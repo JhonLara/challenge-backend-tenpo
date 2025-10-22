@@ -1,12 +1,11 @@
 package com.tenpo.challenge.service;
+import java.time.OffsetDateTime;
 
 import com.tenpo.challenge.entity.HistoryRecord;
 import com.tenpo.challenge.repository.HistoryRecordRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
-
-import java.time.OffsetDateTime;
 
 @Service
 @RequiredArgsConstructor

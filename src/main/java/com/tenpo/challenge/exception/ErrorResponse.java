@@ -1,9 +1,8 @@
 package com.tenpo.challenge.exception;
 
+import java.time.OffsetDateTime;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-
-import java.time.OffsetDateTime;
 
 @Getter
 @AllArgsConstructor

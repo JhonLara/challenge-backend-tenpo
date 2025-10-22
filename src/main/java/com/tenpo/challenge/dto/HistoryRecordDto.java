@@ -1,9 +1,8 @@
 package com.tenpo.challenge.dto;
 
+import java.time.OffsetDateTime;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-
-import java.time.OffsetDateTime;
 
 @Getter
 @AllArgsConstructor

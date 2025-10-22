@@ -1,9 +1,13 @@
 HELP.md
-.gradle
+
+# Gradle (legacy) - keep ignored even if files reappear
+.gradle/
 build/
-!gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+gradle/
+gradlew
+gradlew.bat
 
 ### STS ###
 .apt_generated
@@ -35,3 +39,21 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Maven ###
+target/
+.mvn/timing.properties
+
+### Logs ###
+*.log
+logs/
+hs_err_pid*
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Docker/Compose ###
+.env
+**/.env
+dbdata/
